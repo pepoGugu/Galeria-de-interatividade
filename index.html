@@ -25,7 +25,9 @@
 
   <main id="conteudo">
     <section class="hero">
-      <img class="hero-image" src="assets/brainstorm-hero.png" alt="Mesa com wireframes, notas adesivas e materiais de planejamento de conteudo.">
+      <div class="hero-art" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
       <div class="hero-copy">
         <p class="eyebrow">Blog estatico para GitHub Pages</p>
         <h1>Ideias de layout antes de virar tela final.</h1>
@@ -64,7 +66,7 @@
 
       <div class="post-grid">
         <article class="post-card feature">
-          <a class="card-link" href="posts/ritual-de-brainstorming.html">
+          <a class="card-link" href="#post-ritual">
             <span class="tag">Metodo</span>
             <h3>Um ritual simples para gerar layouts sem travar.</h3>
             <p>Da pergunta inicial ao mapa de possibilidades: um fluxo curto para sair da tela em branco.</p>
@@ -72,7 +74,7 @@
           </a>
         </article>
         <article class="post-card">
-          <a class="card-link" href="posts/layouts-interativos.html">
+          <a class="card-link" href="#post-interativos">
             <span class="tag">Padroes</span>
             <h3>Layouts interativos para conteudo denso.</h3>
             <p>Abas, filtros, camadas expansivas e trilhas horizontais para leitura guiada.</p>
@@ -80,7 +82,7 @@
           </a>
         </article>
         <article class="post-card">
-          <a class="card-link" href="posts/mobile-preview.html">
+          <a class="card-link" href="#post-mobile">
             <span class="tag">Mobile</span>
             <h3>Como testar uma ideia em formato de celular.</h3>
             <p>Antes de pensar em desktop, veja se o conteudo sobrevive ao toque e ao empilhamento.</p>
@@ -88,12 +90,35 @@
           </a>
         </article>
         <article class="post-card">
-          <a class="card-link" href="posts/banco-de-layouts.html">
+          <a class="card-link" href="#post-banco">
             <span class="tag">Biblioteca</span>
             <h3>Banco de layouts para recombinar ideias.</h3>
             <p>Um catalogo de estruturas para acelerar comparacoes e decidir com mais criterio.</p>
             <span class="read-more">Ler post</span>
           </a>
+        </article>
+      </div>
+
+      <div class="inline-posts" aria-label="Posts completos">
+        <article class="inline-post" id="post-ritual">
+          <p class="eyebrow">Metodo</p>
+          <h3>Ritual de brainstorming</h3>
+          <p>Comece pela pergunta central do conteudo. Depois gere tres formatos: um linear, um modular e um visual. Compare por clareza, densidade, escaneabilidade e forca do primeiro viewport.</p>
+        </article>
+        <article class="inline-post" id="post-interativos">
+          <p class="eyebrow">Padroes</p>
+          <h3>Interacao sem peso</h3>
+          <p>Abas, acordeoes, filtros e trilhas horizontais ajudam o leitor a escolher caminho sem exigir JavaScript. A interacao entra quando reduz duvida.</p>
+        </article>
+        <article class="inline-post" id="post-mobile">
+          <p class="eyebrow">Mobile</p>
+          <h3>Preview antes da pagina</h3>
+          <p>O mobile mostra rapido se a hierarquia funciona. Se titulo, chamada e proximo passo nao cabem bem em tela pequena, o layout ainda precisa respirar.</p>
+        </article>
+        <article class="inline-post" id="post-banco">
+          <p class="eyebrow">Biblioteca</p>
+          <h3>Padroes recombinaveis</h3>
+          <p>Nomear os layouts ajuda a discutir melhor: bento hub, roadmap, quote stack, matriz, glossario ou comparativo deixam de ser gosto e viram criterio.</p>
         </article>
       </div>
     </section>
@@ -156,8 +181,81 @@
     <section class="section" id="biblioteca">
       <div class="section-head">
         <p class="eyebrow">Biblioteca</p>
-        <h2>Layouts para recombinar</h2>
-        <p>Uma selecao de estruturas para usar como ponto de partida em posts, paginas, hubs e materiais ricos.</p>
+        <h2>Galeria de layouts</h2>
+        <p>A mesma estrutura do prototipo anterior: um laboratorio para alternar modelos grandes e um banco completo de layouts para recombinar.</p>
+      </div>
+
+      <input class="lab-set" type="radio" name="layout-lab" id="lab-zine" checked>
+      <input class="lab-set" type="radio" name="layout-lab" id="lab-bento">
+      <input class="lab-set" type="radio" name="layout-lab" id="lab-roadmap">
+      <input class="lab-set" type="radio" name="layout-lab" id="lab-newsletter">
+      <input class="lab-set" type="radio" name="layout-lab" id="lab-compare">
+
+      <div class="layout-lab">
+        <div class="lab-tools" aria-label="Previews grandes de layout">
+          <label class="lab-label" for="lab-zine">Zine editorial <span>Z</span></label>
+          <label class="lab-label" for="lab-bento">Bento hub <span>B</span></label>
+          <label class="lab-label" for="lab-roadmap">Roadmap <span>R</span></label>
+          <label class="lab-label" for="lab-newsletter">Newsletter <span>N</span></label>
+          <label class="lab-label" for="lab-compare">Comparativo <span>C</span></label>
+        </div>
+
+        <div class="lab-stage">
+          <article class="lab-panel zine-panel">
+            <div class="lab-canvas zine" aria-hidden="true">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <div class="lab-copy">
+              <h3>Zine editorial com sobreposicao controlada.</h3>
+              <p>Para ensaios visuais, entrevistas e conteudos autorais que precisam parecer menos previsiveis.</p>
+              <div class="lab-points"><span>Impacto visual</span><span>Ritmo assimetrico</span><span>Boa abertura</span></div>
+            </div>
+          </article>
+
+          <article class="lab-panel bento-panel">
+            <div class="lab-canvas bento" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="lab-copy">
+              <h3>Bento hub para organizar varias portas de entrada.</h3>
+              <p>Funciona quando a pagina precisa acomodar artigos, ferramentas, dados e chamadas no mesmo espaco.</p>
+              <div class="lab-points"><span>Grade modular</span><span>Alta densidade</span><span>Bom para hubs</span></div>
+            </div>
+          </article>
+
+          <article class="lab-panel roadmap-panel">
+            <div class="lab-canvas roadmap" aria-hidden="true">
+              <i></i><span></span><i></i><span></span><i></i><span></span><i></i><span></span>
+            </div>
+            <div class="lab-copy">
+              <h3>Roadmap vertical para explicar evolucao.</h3>
+              <p>Use quando o conteudo precisa mostrar ordem, processo, maturidade ou fases de uma decisao.</p>
+              <div class="lab-points"><span>Sequencia clara</span><span>Marco por etapa</span><span>Escaneavel</span></div>
+            </div>
+          </article>
+
+          <article class="lab-panel newsletter-panel">
+            <div class="lab-canvas newsletter" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="lab-copy">
+              <h3>Newsletter digest para leitura rapida e recorrente.</h3>
+              <p>Uma chamada principal, blocos secundarios e notas menores criam uma pagina pronta para circular.</p>
+              <div class="lab-points"><span>Recorrencia</span><span>Curadoria</span><span>Leitura curta</span></div>
+            </div>
+          </article>
+
+          <article class="lab-panel compare-panel">
+            <div class="lab-canvas compare" aria-hidden="true">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <div class="lab-copy">
+              <h3>Comparativo lado a lado para escolha objetiva.</h3>
+              <p>Bom para planos, alternativas, cenarios, ferramentas, recursos ou decisoes com criterios claros.</p>
+              <div class="lab-points"><span>Duas opcoes</span><span>Criterios visiveis</span><span>Decisao rapida</span></div>
+            </div>
+          </article>
+        </div>
       </div>
 
       <div class="layout-library">
@@ -167,39 +265,79 @@
           <p>Uma ideia central de um lado, contexto e acao do outro.</p>
         </article>
         <article class="layout-card">
-          <div class="layout-mini bento" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
-          <h3>Bento hub</h3>
-          <p>Blocos de tamanhos diferentes para muitos caminhos.</p>
-        </article>
-        <article class="layout-card">
-          <div class="layout-mini timeline" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
-          <h3>Linha do tempo</h3>
-          <p>Processos, releases, jornadas e etapas de maturidade.</p>
-        </article>
-        <article class="layout-card">
-          <div class="layout-mini dashboard" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
-          <h3>Dashboard editorial</h3>
-          <p>Dados no topo, leitura de apoio embaixo.</p>
+          <div class="layout-mini compare" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+          <h3>Antes e depois</h3>
+          <p>Comparacao direta para redesigns, diagnosticos, evolucao de metricas ou cases.</p>
         </article>
         <article class="layout-card">
           <div class="layout-mini quote" aria-hidden="true"><span></span><span></span></div>
           <h3>Quote stack</h3>
-          <p>Trechos fortes com comentario e evidencia.</p>
+          <p>Trechos fortes com contexto ao redor, bom para entrevistas e narrativas opinativas.</p>
         </article>
         <article class="layout-card">
-          <div class="layout-mini quiz" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
-          <h3>Quiz de escolha</h3>
-          <p>Pergunta e opcoes para diagnostico rapido.</p>
+          <div class="layout-mini dashboard" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+          <h3>Dashboard editorial</h3>
+          <p>KPI no topo, detalhes abaixo e notas curtas para leitura de negocio.</p>
         </article>
         <article class="layout-card">
-          <div class="layout-mini mobile" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
-          <h3>Story mobile</h3>
-          <p>Sequencia curta para conteudo em etapas.</p>
+          <div class="layout-mini course" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+          <h3>Trilha de aula</h3>
+          <p>Modulo principal, passos laterais e progresso para cursos ou tutoriais.</p>
+        </article>
+        <article class="layout-card">
+          <div class="layout-mini profile" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+          <h3>Perfil comentado</h3>
+          <p>Retrato, bio, fatos essenciais e links de apoio em uma composicao compacta.</p>
+        </article>
+        <article class="layout-card">
+          <div class="layout-mini bento" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+          <h3>Bento de colecao</h3>
+          <p>Blocos de tamanhos diferentes para destacar uma peca principal e varios atalhos.</p>
+        </article>
+        <article class="layout-card">
+          <div class="layout-mini timeline" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+          <h3>Roadmap de produto</h3>
+          <p>Etapas verticais para planos, releases, jornadas ou sequencias de implementacao.</p>
+        </article>
+        <article class="layout-card">
+          <div class="layout-mini newsletter" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+          <h3>Newsletter digest</h3>
+          <p>Uma manchete, duas leituras secundarias e notas menores para envio recorrente.</p>
+        </article>
+        <article class="layout-card">
+          <div class="layout-mini masonry" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          <h3>Masonry social</h3>
+          <p>Fluxo irregular para posts, referencias, imagens curtas e conteudo de descoberta.</p>
+        </article>
+        <article class="layout-card">
+          <div class="layout-mini product" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+          <h3>Produto comparado</h3>
+          <p>Imagem do item, especificacoes e criterios de escolha em uma pagina objetiva.</p>
         </article>
         <article class="layout-card">
           <div class="layout-mini glossary" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
           <h3>Glossario visual</h3>
-          <p>Termos, pistas graficas e definicoes curtas.</p>
+          <p>Termos curtos com pistas graficas para documentacao, guias ou onboarding.</p>
+        </article>
+        <article class="layout-card">
+          <div class="layout-mini podcast" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+          <h3>Show notes</h3>
+          <p>Capa, ondas de audio, capitulos e links de apoio para podcasts ou entrevistas.</p>
+        </article>
+        <article class="layout-card">
+          <div class="layout-mini calculator" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+          <h3>Calculadora editorial</h3>
+          <p>Campos, controles e resultado visual para simuladores simples sem precisar de script.</p>
+        </article>
+        <article class="layout-card">
+          <div class="layout-mini map" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          <h3>Mapa de decisao</h3>
+          <p>Uma area principal com pontos de apoio para explicar rotas, segmentos ou cenarios.</p>
+        </article>
+        <article class="layout-card">
+          <div class="layout-mini quiz" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+          <h3>Quiz de escolha</h3>
+          <p>Pergunta principal e opcoes empilhadas para diagnosticos, trilhas ou recomendacoes.</p>
         </article>
       </div>
     </section>

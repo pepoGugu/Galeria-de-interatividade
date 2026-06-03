@@ -6,9 +6,10 @@ Blog estatico para publicar ideias de layouts interativos para conteudo.
 
 - `index.html`: pagina inicial do blog.
 - `styles.css`: estilos globais.
-- `assets/brainstorm-hero.png`: imagem de capa.
-- `posts/`: posts individuais.
 - `.nojekyll`: evita processamento do GitHub Pages.
+- `README.md`: instrucoes do projeto.
+
+Tudo funciona com esses quatro arquivos na raiz. Nao ha pasta de imagens, posts separados, JavaScript, dependencias externas nem etapa de build.
 
 ## Publicar no GitHub Pages
 
