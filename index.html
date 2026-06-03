@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Um blog estatico de brainstorming para criar, comparar e publicar ideias de layouts interativos para conteudo.">
+  <title>Brainstorm de Layouts</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteudo</a>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Brainstorm de Layouts">
+      <span class="brand-mark" aria-hidden="true">B</span>
+      <span>Brainstorm de Layouts</span>
+    </a>
+    <nav class="site-nav" aria-label="Navegacao principal">
+      <a href="#posts">Posts</a>
+      <a href="#ideias">Ideias</a>
+      <a href="#biblioteca">Biblioteca</a>
+      <a href="#processo">Processo</a>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero">
+      <img class="hero-image" src="assets/brainstorm-hero.png" alt="Mesa com wireframes, notas adesivas e materiais de planejamento de conteudo.">
+      <div class="hero-copy">
+        <p class="eyebrow">Blog estatico para GitHub Pages</p>
+        <h1>Ideias de layout antes de virar tela final.</h1>
+        <p>Um caderno publico de brainstorming para testar estruturas de conteudo, comparar alternativas e guardar padroes reutilizaveis.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#posts">Ler posts</a>
+          <a class="button secondary" href="#biblioteca">Ver biblioteca</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section intro-grid" aria-label="Resumo do projeto">
+      <article class="intro-card">
+        <span class="stat">01</span>
+        <h2>Brainstorm visual</h2>
+        <p>Transforme ideias soltas em propostas de layout que podem ser discutidas antes de produzir conteudo.</p>
+      </article>
+      <article class="intro-card">
+        <span class="stat">02</span>
+        <h2>CSS-only</h2>
+        <p>Filtros, acordeoes e estados sao feitos com HTML e CSS. Nenhum JavaScript e nenhuma dependencia externa.</p>
+      </article>
+      <article class="intro-card">
+        <span class="stat">03</span>
+        <h2>Pronto para publicar</h2>
+        <p>Arquivos simples, rotas relativas e README com instrucoes para GitHub Pages.</p>
+      </article>
+    </section>
+
+    <section class="section" id="posts">
+      <div class="section-head">
+        <p class="eyebrow">Posts recentes</p>
+        <h2>Notas de brainstorming</h2>
+        <p>Cada post organiza uma parte do processo: gerar caminhos, prototipar mobile, montar biblioteca e escolher o melhor formato.</p>
+      </div>
+
+      <div class="post-grid">
+        <article class="post-card feature">
+          <a class="card-link" href="posts/ritual-de-brainstorming.html">
+            <span class="tag">Metodo</span>
+            <h3>Um ritual simples para gerar layouts sem travar.</h3>
+            <p>Da pergunta inicial ao mapa de possibilidades: um fluxo curto para sair da tela em branco.</p>
+            <span class="read-more">Ler post</span>
+          </a>
+        </article>
+        <article class="post-card">
+          <a class="card-link" href="posts/layouts-interativos.html">
+            <span class="tag">Padroes</span>
+            <h3>Layouts interativos para conteudo denso.</h3>
+            <p>Abas, filtros, camadas expansivas e trilhas horizontais para leitura guiada.</p>
+            <span class="read-more">Ler post</span>
+          </a>
+        </article>
+        <article class="post-card">
+          <a class="card-link" href="posts/mobile-preview.html">
+            <span class="tag">Mobile</span>
+            <h3>Como testar uma ideia em formato de celular.</h3>
+            <p>Antes de pensar em desktop, veja se o conteudo sobrevive ao toque e ao empilhamento.</p>
+            <span class="read-more">Ler post</span>
+          </a>
+        </article>
+        <article class="post-card">
+          <a class="card-link" href="posts/banco-de-layouts.html">
+            <span class="tag">Biblioteca</span>
+            <h3>Banco de layouts para recombinar ideias.</h3>
+            <p>Um catalogo de estruturas para acelerar comparacoes e decidir com mais criterio.</p>
+            <span class="read-more">Ler post</span>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section band" id="ideias">
+      <div class="section-head">
+        <p class="eyebrow">Mesa de ideias</p>
+        <h2>Filtre por intencao</h2>
+        <p>Use os controles abaixo para pensar no objetivo do conteudo. A filtragem e feita so com CSS.</p>
+      </div>
+
+      <div class="idea-filter">
+        <input class="filter-input" type="radio" name="idea-filter" id="todos" checked>
+        <input class="filter-input" type="radio" name="idea-filter" id="explicar">
+        <input class="filter-input" type="radio" name="idea-filter" id="comparar">
+        <input class="filter-input" type="radio" name="idea-filter" id="converter">
+
+        <div class="filter-controls" aria-label="Filtros de ideias">
+          <label for="todos">Todos</label>
+          <label for="explicar">Explicar</label>
+          <label for="comparar">Comparar</label>
+          <label for="converter">Converter</label>
+        </div>
+
+        <div class="idea-board">
+          <article class="idea-card" data-kind="explicar">
+            <span class="idea-number">E1</span>
+            <h3>Mapa de contexto</h3>
+            <p>Comece com uma pergunta, depois abra camadas de causa, exemplo e proximo passo.</p>
+          </article>
+          <article class="idea-card" data-kind="comparar">
+            <span class="idea-number">C1</span>
+            <h3>Antes e depois</h3>
+            <p>Use duas colunas fortes para mostrar mudanca, impacto e motivo da decisao.</p>
+          </article>
+          <article class="idea-card" data-kind="converter">
+            <span class="idea-number">V1</span>
+            <h3>Oferta modular</h3>
+            <p>Combine prova, detalhe, chamada curta e um comando simples na mesma dobra.</p>
+          </article>
+          <article class="idea-card" data-kind="explicar">
+            <span class="idea-number">E2</span>
+            <h3>Roadmap vertical</h3>
+            <p>Organize fases, marcos e riscos quando o leitor precisa entender sequencia.</p>
+          </article>
+          <article class="idea-card" data-kind="comparar">
+            <span class="idea-number">C2</span>
+            <h3>Matriz de decisao</h3>
+            <p>Cruze esforco, impacto e confianca para escolher um caminho sem depender de gosto.</p>
+          </article>
+          <article class="idea-card" data-kind="converter">
+            <span class="idea-number">V2</span>
+            <h3>Checklist acionavel</h3>
+            <p>Transforme o conteudo em passos curtos que levam a uma decisao ou download.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="biblioteca">
+      <div class="section-head">
+        <p class="eyebrow">Biblioteca</p>
+        <h2>Layouts para recombinar</h2>
+        <p>Uma selecao de estruturas para usar como ponto de partida em posts, paginas, hubs e materiais ricos.</p>
+      </div>
+
+      <div class="layout-library">
+        <article class="layout-card">
+          <div class="layout-mini split" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+          <h3>Split insight</h3>
+          <p>Uma ideia central de um lado, contexto e acao do outro.</p>
+        </article>
+        <article class="layout-card">
+          <div class="layout-mini bento" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+          <h3>Bento hub</h3>
+          <p>Blocos de tamanhos diferentes para muitos caminhos.</p>
+        </article>
+        <article class="layout-card">
+          <div class="layout-mini timeline" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+          <h3>Linha do tempo</h3>
+          <p>Processos, releases, jornadas e etapas de maturidade.</p>
+        </article>
+        <article class="layout-card">
+          <div class="layout-mini dashboard" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+          <h3>Dashboard editorial</h3>
+          <p>Dados no topo, leitura de apoio embaixo.</p>
+        </article>
+        <article class="layout-card">
+          <div class="layout-mini quote" aria-hidden="true"><span></span><span></span></div>
+          <h3>Quote stack</h3>
+          <p>Trechos fortes com comentario e evidencia.</p>
+        </article>
+        <article class="layout-card">
+          <div class="layout-mini quiz" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+          <h3>Quiz de escolha</h3>
+          <p>Pergunta e opcoes para diagnostico rapido.</p>
+        </article>
+        <article class="layout-card">
+          <div class="layout-mini mobile" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+          <h3>Story mobile</h3>
+          <p>Sequencia curta para conteudo em etapas.</p>
+        </article>
+        <article class="layout-card">
+          <div class="layout-mini glossary" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+          <h3>Glossario visual</h3>
+          <p>Termos, pistas graficas e definicoes curtas.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section band process" id="processo">
+      <div class="section-head">
+        <p class="eyebrow">Processo</p>
+        <h2>Do rascunho ao post</h2>
+        <p>Um fluxo simples para transformar ideias soltas em conteudo publicavel.</p>
+      </div>
+
+      <div class="process-grid">
+        <details open>
+          <summary>1. Defina a pergunta</summary>
+          <p>Todo layout precisa responder uma duvida: explicar, comparar, convencer, resumir ou conduzir.</p>
+        </details>
+        <details>
+          <summary>2. Gere tres formatos</summary>
+          <p>Crie pelo menos tres estruturas diferentes antes de escolher: uma linear, uma modular e uma visual.</p>
+        </details>
+        <details>
+          <summary>3. Teste no mobile</summary>
+          <p>Se o conteudo perde hierarquia em tela pequena, o layout ainda nao esta pronto.</p>
+        </details>
+        <details>
+          <summary>4. Publique e revise</summary>
+          <p>Suba no GitHub Pages, compartilhe o link e registre o que funcionou para a proxima rodada.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <h2>Brainstorm de Layouts</h2>
+      <p>Blog estatico, pronto para GitHub Pages, feito com HTML e CSS.</p>
+    </div>
+    <a class="button footer-button" href="#conteudo">Voltar ao topo</a>
+  </footer>
+</body>
+</html>
